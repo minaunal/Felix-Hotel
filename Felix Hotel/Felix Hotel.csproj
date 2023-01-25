@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B1F7A208-CF8D-46BF-BE00-4CE9A1C2604E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Felix_Hotel</RootNamespace>
+    <AssemblyName>Felix Hotel</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAdminGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdminGiris.Designer.cs">
+      <DependentUpon>FrmAdminGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnaForm.Designer.cs">
+      <DependentUpon>FrmAnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGiderler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGiderler.Designer.cs">
+      <DependentUpon>FrmGiderler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHavaDurumu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHavaDurumu.Designer.cs">
+      <DependentUpon>FrmHavaDurumu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMesaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMesaj.Designer.cs">
+      <DependentUpon>FrmMesaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMusteriBilgiler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMusteriBilgiler.Designer.cs">
+      <DependentUpon>FrmMusteriBilgiler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOyun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOyun.Designer.cs">
+      <DependentUpon>FrmOyun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmYeniMusteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYeniMusteri.Designer.cs">
+      <DependentUpon>FrmYeniMusteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAdminGiris.resx">
+      <DependentUpon>FrmAdminGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAnaForm.resx">
+      <DependentUpon>FrmAnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGiderler.resx">
+      <DependentUpon>FrmGiderler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHavaDurumu.resx">
+      <DependentUpon>FrmHavaDurumu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMesaj.resx">
+      <DependentUpon>FrmMesaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMusteriBilgiler.resx">
+      <DependentUpon>FrmMusteriBilgiler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOyun.resx">
+      <DependentUpon>FrmOyun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYeniMusteri.resx">
+      <DependentUpon>FrmYeniMusteri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\att3.gif.crdownload" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gunes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gunes1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bulut.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\at1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\at2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\at3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aty2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\att1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\att2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-244.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sample_User_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\psw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pswr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13003646-A-light-blue-background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13003646-A-light-blue-background1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\room-icon-6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\temperature-thermometer-reading-snow-cold-weather-measurement-temperature-icon-11563036127dhxwmdaqcy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\game.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-weather-black-and-white-transparent-weather-black-and-white-171788.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hata.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2698240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sun-icon-4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nature-country-road-field-with-green-meadow-blue-sky-Summer-Landscape-Wallpaper-Hd-3840x2400.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
